@@ -38,18 +38,15 @@ def pronoun_snips(parsed_text):
     else:
         print("No pronouns")
 
-def get_noun_phrase(snip):
 
 
 
 
+#t = parse_saText('2_astafiev_zhizn_prozhit.conll')
+#p = pronoun_snips(t)
 
-
-t = parse_saText('2_astafiev_zhizn_prozhit.conll')
-p = pronoun_snips(t)
-
-for q in p:
-    print(q)
+#for q in p:
+    #print(q)
 
 #print(p[0], p[1])
 
