@@ -1,3 +1,6 @@
 # -*- coding: utf8 -*-
-qwe = ['q', '123', 'sdfsdf', 'sdfsfdwe']
-print(qwe[:2])
+f = ['1', 'Хозяин']
+start = int(f[0])
+print(start)
+f[0] = '123'
+print(f)
