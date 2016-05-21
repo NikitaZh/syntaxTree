@@ -53,6 +53,6 @@ def get_coref_chains(chains_arr):
 
 
 
-p = get_ids_text('Groups.txt', 5)
-ch = get_coref_chains(p)
-print(ch)
+#p = get_ids_text('Groups.txt', 5)
+#ch = get_coref_chains(p)
+#print(ch)
