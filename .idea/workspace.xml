@@ -24,8 +24,8 @@
       <file leaf-file-name="saText.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saText.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="50" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="50" />
+            <state vertical-scroll-proportion="-11.37037">
+              <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -35,7 +35,17 @@
         <entry file="file://$PROJECT_DIR$/NPinSnips.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="39" />
+              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="path_to_texts.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/path_to_texts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -45,18 +55,40 @@
         <entry file="file://$PROJECT_DIR$/next_try.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="features_extracting.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="features_extracting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features_extracting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6993988">
-              <caret line="133" column="64" selection-start-line="133" selection-start-column="64" selection-end-line="133" selection-end-column="64" />
+            <state vertical-scroll-proportion="-16.37037">
+              <caret line="171" column="65" selection-start-line="171" selection-start-column="65" selection-end-line="171" selection-end-column="65" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all_features.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/all_features.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.71398306">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <folding>
+                <element signature="e#23#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,10 +106,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/try.py" />
+        <option value="$PROJECT_DIR$/next_try.py" />
+        <option value="$PROJECT_DIR$/path_to_texts.py" />
+        <option value="$PROJECT_DIR$/features_extracting.py" />
         <option value="$PROJECT_DIR$/saText.py" />
         <option value="$PROJECT_DIR$/NPinSnips.py" />
-        <option value="$PROJECT_DIR$/next_try.py" />
-        <option value="$PROJECT_DIR$/features_extracting.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/all_features.py" />
       </list>
     </option>
   </component>
@@ -140,7 +175,41 @@
     <property name="last_opened_file_path" value="/Volumes/Macintosh HD/opt/local/Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Python.features_extracting">
+  <component name="RunManager" selected="Python.all_features">
+    <configuration default="false" name="NPinSnips" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="syntaxTree" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NPinSnips.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="all_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="syntaxTree" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/all_features.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="saText" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -158,7 +227,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="try" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="path_to_texts" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -170,41 +239,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="syntaxTree" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/try.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="next_try" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="syntaxTree" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/next_try.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NPinSnips" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="syntaxTree" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NPinSnips.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/path_to_texts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -349,19 +384,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.saText" />
-      <item index="1" class="java.lang.String" itemvalue="Python.try" />
-      <item index="2" class="java.lang.String" itemvalue="Python.next_try" />
-      <item index="3" class="java.lang.String" itemvalue="Python.NPinSnips" />
+      <item index="0" class="java.lang.String" itemvalue="Python.NPinSnips" />
+      <item index="1" class="java.lang.String" itemvalue="Python.all_features" />
+      <item index="2" class="java.lang.String" itemvalue="Python.saText" />
+      <item index="3" class="java.lang.String" itemvalue="Python.path_to_texts" />
       <item index="4" class="java.lang.String" itemvalue="Python.features_extracting" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.features_extracting" />
-        <item index="1" class="java.lang.String" itemvalue="Python.next_try" />
-        <item index="2" class="java.lang.String" itemvalue="Python.NPinSnips" />
-        <item index="3" class="java.lang.String" itemvalue="Python.try" />
-        <item index="4" class="java.lang.String" itemvalue="Python.saText" />
+        <item index="0" class="java.lang.String" itemvalue="Python.all_features" />
+        <item index="1" class="java.lang.String" itemvalue="Python.path_to_texts" />
+        <item index="2" class="java.lang.String" itemvalue="Python.features_extracting" />
+        <item index="3" class="java.lang.String" itemvalue="Python.saText" />
+        <item index="4" class="java.lang.String" itemvalue="Python.NPinSnips" />
       </list>
     </recent_temporary>
   </component>
@@ -382,22 +417,22 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1484375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3001328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -428,7 +463,23 @@
     <entry file="file://$PROJECT_DIR$/next_try.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/path_to_texts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features_extracting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.37037">
+          <caret line="171" column="65" selection-start-line="171" selection-start-column="65" selection-end-line="171" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -436,24 +487,34 @@
     <entry file="file://$PROJECT_DIR$/NPinSnips.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="39" />
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/saText.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="50" />
+        <state vertical-scroll-proportion="-11.37037">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features_extracting.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6993988">
-          <caret line="133" column="64" selection-start-line="133" selection-start-column="64" selection-end-line="133" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71398306">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding>
+            <element signature="e#23#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
