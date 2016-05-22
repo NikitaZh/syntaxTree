@@ -26,7 +26,6 @@ def get_shifts(text):
         arr.append(l)
     return arr
 
-
 def get_shift_info(sentences, shifts):
     sh = 0
 
@@ -47,12 +46,6 @@ def get_shift_info(sentences, shifts):
                         break
     return sentences
 
-
-
-
-
-
-
 def pronoun_snips(parsed_text):
     """Finding pronoun and its context"""
     pronouns = ['он', 'она', 'оно', 'они', 'его', 'её', 'их', 'свой', 'мой', 'себя', 'который']
@@ -64,28 +57,23 @@ def pronoun_snips(parsed_text):
             syntax_info = word
             #print(syntax_info[1], distance)
             if syntax_info[2] in pronouns:
+                #print(syntax_info[1])
                 #distance += 1
                 if i-3 >= 0:
                     snips.append(parsed_text[i-3:i+1])
                 else:
                     snips.append(parsed_text[:i+1])
-                snips[-1].append(syntax_info[0])
+                snips[-1].append([syntax_info[0],syntax_info[-1]])
     #print(distance)
     if len(snips) > 0:
         return snips
     """возвращает массив, в котором каждый элемент содержит контекст местоимений
      и номер(arr[i[-1]]), который показывает к какому местоимению найден контекст в последнем предложении"""
 
-
-
-
-
-
-#t = parse_saText('2_astafiev_zhizn_prozhit.conll')
-#q = get_shift_info(t, get_shifts(get_ids_text('Tokens.txt', 5)))
-
+#t = parse_saText('OpenCorpora/682-done.conll')
+#q = get_shift_info(t, get_shifts(get_ids_text('Tokens.txt', 66)))
 #p = pronoun_snips(t)
-#print(p[30])
+
 
 """for word in t[0]:
     word = word.split('\t')

@@ -1,0 +1,87 @@
+doc_id	path	url	title
+1	fiction/102_beliajev_nad_bezdnoj.txt	http://lib.ru/RUFANT/BELAEW/bezdna.txt_with-big-pictures.html#1	
+2	fiction/107_dragunsky_volshebnaja_sila_iskusstva.txt	http://lib.ru/PRIKL/DRAGUNSKIJ/sila.txt_with-big-pictures.html	Волшебная сила искусства
+3	fiction/15_paustovsky_zhilcy_starogo_doma.txt	http://lib.ru/PROZA/PAUSTOWSKIJ/r_bakenshik.txt	
+5	fiction/2_astafiev_zhizn_prozhit.txt	http://lib.ru/PROZA/ASTAFIEW/r_life.txt	
+6	fiction/30_dojl_sluchaj.txt	http://lib.ru/AKONANDOJL/ledi.txt	
+7	fiction/34_kassil_solnce_svetit.txt	http://lib.ru/PROZA/KASSIL/portret.txt_with-big-pictures.html	
+8	fiction/43_musatov_stozhary.txt	http://lib.ru/PROZA/MUSATOW/stozhary.txt	
+9	fiction/44_nagibin_siren.txt	http://lib.ru/PROZA/NAGIBIN/r_siren.txt	
+10	fiction/53_beliajev_dom_s_prividenijami.txt	http://lib.ru/PROZA/BELYAEW_W/fort2.txt_with-big-pictures.html	
+11	fiction/5_petrushevskaya_v_detstve.txt	http://lib.ru/PROZA/PETRUSHEWSKAYA/r_w_detstwe.txt	
+12	fiction/67_zamiatin_kolumb.txt	http://az.lib.ru/z/zamjatin_e_i/text_1918_kolumb.shtml	
+13	fiction/73_ilf_schastlivy_otec.txt	http://lib.ru/ILFPETROV/ilf_stories.txt_with-big-pictures.html	
+15	fiction/andersen_motylek.txt	http://az.lib.ru/a/andersen_g_h/text_1100.shtml	
+16	fiction/bazhov_travyanaja_zapadenka.txt	http://lib.ru/TALES/BAZHOV/skazki1.txt	
+17	fiction/bunin_skazka.txt	http://az.lib.ru/b/bunin_i_a/text_1650.shtml	
+18	fiction/dostojevskij_podrostok.txt	http://az.lib.ru/d/dostoewskij_f_m/text_0090.shtml	
+19	fiction/dovlatov_kompromiss_6.txt	http://lib.ru/DOWLATOW/kompromiss.txt	
+20	fiction/fet_knyaginya.txt	http://az.lib.ru/f/fet_a_a/text_0190.shtml	
+21	fiction/gilyarovskij_moi_skitanija.txt	http://lib.ru/RUSSLIT/GILQROWSKIJ/skitania.txt	
+22	fiction/gogol_zapiski_3.txt	http://az.lib.ru/g/gogolx_n_w/text_0130.shtml	
+23	fiction/harms_upadanije.txt	http://lib.ru/HARMS/xarms_prose.txt	
+24	fiction/korolenko_mgnovenije.txt	http://lib.ru/RUSSLIT/KOROLENKO/mgnoven.txt	
+28	fiction/turgenev_veshnije_vody.txt	http://az.lib.ru/t/turgenew_i_s/text_0140.shtml	
+30	Lenta/2013_04_11_dotless_.txt	http://lenta.ru/news/2013/04/11/dotless	
+41	Lenta/2013_07_31_krebs_.txt	http://lenta.ru/news/2013/07/31/krebs	
+51	Lenta/lenta.ru-news-2014-01-19-cutshort.txt	http://lenta.ru/news/2014/01/19/cutshort/	
+52	Lenta/lenta.ru-news-2014-01-24-if.txt	http://lenta.ru/news/2014/01/24/if/	
+53	Lenta/lenta.ru-news-2014-01-30-crimea.txt	http://lenta.ru/news/2014/01/30/crimea/	
+54	Lenta/lenta.ru-news-2014-02-03-capitanic.txt	http://lenta.ru/news/2014/02/03/capitanic/	
+55	Lenta/lenta.ru-news-2014-02-03-london.txt	http://lenta.ru/news/2014/02/03/london/	
+56	Lenta/lenta.ru-news-2014-02-03-name1.txt	http://lenta.ru/news/2014/02/03/name1/	
+57	Lenta/lenta.ru-news-2014-02-03-rucksack.txt	http://lenta.ru/news/2014/02/03/rucksack/	
+58	Lenta/lenta.ru-news-2014-02-04-party.txt	http://lenta.ru/news/2014/02/04/party/	
+59	Lenta/lenta.ru-news-2014-02-04-pyramid.txt	http://lenta.ru/news/2014/02/04/pyramid/	
+60	OpenCorpora/448-done.txt	нет	
+61	OpenCorpora/516-done.txt	нет	
+62	OpenCorpora/540-done.txt	нет	
+63	OpenCorpora/554-done.txt	нет	
+64	OpenCorpora/559-done.txt	нет	
+65	OpenCorpora/675-done.txt	нет	
+66	OpenCorpora/682-done.txt	нет	
+67	OpenCorpora/689-done.txt	нет	
+68	OpenCorpora/789-done.txt	нет	
+69	OpenCorpora/833-done.txt	нет	
+70	OpenCorpora/842-done.txt	нет	
+71	OpenCorpora/850-done.txt	нет	
+72	OpenCorpora/870-done.txt	нет	
+73	OpenCorpora/890-done.txt	нет	
+74	OpenCorpora/895-done.txt	нет	
+75	OpenCorpora/908-done.txt	нет	
+76	OpenCorpora/921-done.txt	нет	
+77	OpenCorpora/992-done.txt	нет	
+78	Science/09Jan2014_bloomberg_sleep.html.txt	см. Description.txt	
+80	fiction/strugackije_ponedelnik.txt		
+81	News/2009-abbas5_ru.txt		
+82	News/2009-abbas6_ru.txt		
+83	News/2009-abbas7_ru.txt		
+84	News/2009-abusada7_ru.txt		
+85	News/2009-ahtisaari3_ru.txt		
+86	News/2009-annan2_ru.txt		
+87	News/2009-annan3_ru.txt		
+88	News/2009-aslund24_ru.txt		
+89	News/2009-asteiner3_ru.txt		
+90	News/2009-asteiner5_ru.txt		
+91	News/2009-avineri35_ru.txt		
+92	News/2009-bakker3_ru.txt		
+93	News/2009-bakker4_ru.txt		
+94	News/2009-baradei1_ru.txt		
+95	News/2009-barbarosie1_ru.txt		
+96	News/2009-barnett1_ru.txt		
+97	News/2009-barroso1_ru.txt		
+98	News/2009-barroso3_ru.txt		
+99	News/2009-beasley1_ru.txt		
+100	News/2009-bebchuk1_ru.txt		
+111	OpenCorpora/347-done.txt		
+112	OpenCorpora/388-done.txt		
+113	Otzyvy/www.turpravda.ru-gr-halkidiki-Potidea_Palace-h13681-r59401.txt		
+114	Otzyvy/www.turpravda.ru-gr-halkidiki-Potidea_Palace-h13681-r67576.txt		
+115	Otzyvy/www.turpravda.ru-gr-halkidiki-Potidea_Palace-h13681-r68708.txt		
+116	Otzyvy/www.turpravda.ru-gr-halkidiki-Potidea_Palace-h13681-r69802.txt		
+117	Otzyvy/www.turpravda.ru-gr-halkidiki-Potidea_Palace-h13681-r72202.txt		
+118	PhotoDescr/PhotoDescr1.txt		
+119	PhotoDescr/PhotoDescr11.txt		
+120	PhotoDescr/PhotoDescr15.txt		
+133	Science/philology.ru-linguistics1-alpatov-12-out2.txt		
+134	Science/philology.ru-linguistics1-barannikov-46-out2.txt

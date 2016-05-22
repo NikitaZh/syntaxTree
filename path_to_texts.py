@@ -29,7 +29,15 @@ def get_chain(chains_arr, numb):
     chain = []
     for line in chains_arr:
         if line[3] == numb:
-            chain.append([line[7], line[5]])
+            if len(line[10]) > 0:
+                l = line[11].strip('\n')
+                if ',' in l:
+                    l = l.split(',')
+                    chain.append([line[7], l[0]])
+                else:
+                    chain.append([line[7], l])
+            else:
+                chain.append([line[7], line[5]])
     return chain
 
 def get_coref_chains(chains_arr):
@@ -38,21 +46,15 @@ def get_coref_chains(chains_arr):
     for line in chains_arr:
         if 'str:pron' in line[9]:
             chain = get_chain(chains_arr, line[3])
-            pron_chains.append([line[7], chain])
+            pron_chains.append([[line[7], line[5]], chain])
         elif 'str:refl' in line[9]:
             chain = get_chain(chains_arr, line[3])
-            pron_chains.append([line[7], chain])
+            pron_chains.append([[line[7], line[5]], chain])
         elif 'str:rel' in line[9]:
             chain = get_chain(chains_arr, line[3])
-            pron_chains.append([line[7], chain])
+            pron_chains.append([[line[7], line[5]], chain])
     return pron_chains
 
-
-
-
-
-
-
-#p = get_ids_text('Groups.txt', 5)
+#p = get_ids_text('Groups.txt', 66)
 #ch = get_coref_chains(p)
 #print(ch)
