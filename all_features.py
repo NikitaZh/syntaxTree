@@ -31,7 +31,7 @@ def doc_features(conll_text, chains, id, txt2wr8, tokens_txt):
                         txt2write.write(str(item)+';')
                     txt2write.write('\r\n')
                 break
-        print(s)
+        #print(s)
     txt2write.close()
 
 #doc_features(text, chains, id, text2write, tokens)

@@ -84,18 +84,25 @@ def gram_agreement(s, np, s_number, a_id):
     return gender, number
 
 def pronoun_info(s, a_id):
-    perpronouns = ['он', 'она', 'оно', 'они', 'я', 'мой']
-    refpronouns = ['свой', 'себе']
+    #pronouns = ['он', 'она', 'оно', 'они', 'его', 'её', 'их', 'свой', 'мой', 'себя', 'который']
+    perpronouns = ['он', 'она', 'оно', 'они', 'мой', 'их', 'его', 'её']
+    refpronouns = ['свой', 'себя']
     relpronouns = ['который']
     pronoun_gram_info = s[-1][int(a_id)-1]
     #pronoun_gram_info = pronoun_gram_info.split('\t')
     pronoun_type = None
     if pronoun_gram_info[2] in perpronouns:
-        pronoun_type = 'per'
+        #pronoun_type = 'per'
+        pronoun_type = '1'
     elif pronoun_gram_info[2] in refpronouns:
-        pronoun_type = 'ref'
+        #pronoun_type = 'ref'
+        pronoun_type = '2'
     elif pronoun_gram_info[2] in relpronouns:
-        pronoun_type = 'rel'
+        #pronoun_type = 'rel'
+        pronoun_type = '3'
+    if pronoun_type is None:
+        print(pronoun_gram_info[2])
+
     return pronoun_type
 
 #gram_agreement(sent_arr[:-1],['33', 'удовольствие', '31', 'в', '32', 'свое'], 2, 25)
@@ -162,9 +169,9 @@ def get_features(sents, nps, conll_text, chains):
                     dbl = True
                 vect.append(target)                                    #UNCOMMEND
                 vectors.append(vect)
-            if dbl is True:
-                print('GOT IT')
-    print('NEXT')
+            #if dbl is True:
+                #print('GOT IT')
+    #print('NEXT')
     return vectors
 
 #p = get_features(sent_arr, sent_arr_np, conll_text, chains_arr)
