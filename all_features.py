@@ -16,8 +16,8 @@ def doc_features(conll_text, chains, id, txt2wr8, tokens_txt):
     txt2write = open(txt2wr8, 'a', encoding='utf-8')
     shifts = get_shift_info(raw_sentences, get_shifts(get_ids_text(tokens_txt, id)))
     snips = pronoun_snips(raw_sentences)
-    if len(snips) != len(chains):
-        print('ERROR')
+    #if len(snips) != len(chains):
+        #print('ERROR')
     for s in range(len(snips)):
         #pron = snips[s][-2][int(snips[s][-1])-1]
         pron_shift = snips[s][-1][1]

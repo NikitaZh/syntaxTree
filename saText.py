@@ -59,8 +59,8 @@ def pronoun_snips(parsed_text):
             if syntax_info[2] in pronouns:
                 #print(syntax_info[1])
                 #distance += 1
-                if i-3 >= 0:
-                    snips.append(parsed_text[i-3:i+1])
+                if i-2 >= 0:
+                    snips.append(parsed_text[i-2:i+1])
                 else:
                     snips.append(parsed_text[:i+1])
                 snips[-1].append([syntax_info[0],syntax_info[-1]])

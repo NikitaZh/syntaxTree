@@ -53,6 +53,9 @@ def get_coref_chains(chains_arr):
         elif 'str:rel' in line[9]:
             chain = get_chain(chains_arr, line[3])
             pron_chains.append([[line[7], line[5]], chain])
+        elif 'str:poss' in line[9]:
+            chain = get_chain(chains_arr, line[3])
+            pron_chains.append([[line[7], line[5]], chain])
     return pron_chains
 
 #p = get_ids_text('Groups.txt', 66)

@@ -7,6 +7,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
+import random
 
 
 data = 'vectors.txt'
@@ -21,9 +22,7 @@ def get_data(txt):
     return arr
 
 t = 0
-src = []
-trg = []
-
+p = 0
 src0 = []
 trg0 = []
 src1 = []
@@ -31,19 +30,26 @@ trg1 = []
 
 for q in get_data(data):
     if q[-1] == '1':
+        t += 1
         src1.append(q[:-1])
         trg1.append(q[-1])
     else:
+        p += 1
         src0.append(q[:-1])
         trg0.append(q[-1])
 
-
-    src.append(q[:-1])
-    trg.append(q[-1])
-#print(len(src), len(trg))
-
+print(t, '-количество положительных параметров')
+print(p, '-количество отрицательных параметров')
+random.shuffle(src0)
+random.shuffle(src1)
+src = src0[:3100] + src1[:1600]
+trg = trg0[:3100] + trg1[:1600]
 #norm_src = preprocessing.normalize(src)
 standart_src = preprocessing.scale(src)
+expected = trg0[3100:4200] + trg1[1600:]
+pred = src0[3100:4200] + src1[1600:]
+pred = preprocessing.scale(pred)
+
 
 model = ExtraTreesClassifier()
 model.fit(standart_src, trg)
@@ -56,8 +62,8 @@ model1 = LogisticRegression()
 model1.fit(standart_src, trg)
 print(model1)
 # make predictions
-expected = trg
-predicted = model1.predict(standart_src)
+#expected = trg
+predicted = model1.predict(pred)
 # summarize the fit of the model
 print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
@@ -67,8 +73,8 @@ model2 = GaussianNB()
 model2.fit(standart_src, trg)
 print(model2)
 # make predictions
-expected = trg
-predicted = model2.predict(standart_src)
+#expected = trg
+predicted = model2.predict(pred)
 # summarize the fit of the model
 print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
@@ -79,8 +85,8 @@ model3 = KNeighborsClassifier()
 model3.fit(standart_src, trg)
 print(model3)
 # make predictions
-expected = trg
-predicted = model3.predict(standart_src)
+#expected = trg
+predicted = model3.predict(pred)
 # summarize the fit of the model
 print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
@@ -91,45 +97,25 @@ model4 = DecisionTreeClassifier()
 model4.fit(standart_src, trg)
 print(model4)
 # make predictions
-expected = trg
-predicted = model4.predict(standart_src)
+#expected = trg
+predicted = model4.predict(pred)
 # summarize the fit of the model
 print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
 print('________________________')
 
-'''
+
 # fit a SVM model to the data
 model5 = SVC()
 model5.fit(standart_src, trg)
 print(model5)
 # make predictions
-expected = trg
-predicted = model5.predict(standart_src)
+#expected = trg
+predicted = model5.predict(pred)
 # summarize the fit of the model
 print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
 print('________________________')
-'''
-
-parameters = {'C': (0.1, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0)}
-gs = grid_search.GridSearchCV(svm.LinearSVC(), parameters)
-first_3out4_src = src0[:23000]+src1[:1500]
-first_3out4_src_st = preprocessing.scale(first_3out4_src)
-first_3out4_trg = trg0[:23000]+trg1[:1500]
-first_3out4_trg_st = preprocessing.scale(first_3out4_trg)
-gs.fit(first_3out4_src_st, first_3out4_trg)
-print(gs.best_score_)
-print(gs.grid_scores_)
-
-last_4out4_src = src0[23000:]+src1[1500:]
-last_4out4_src_st = preprocessing.scale(last_4out4_src)
-last_4out4_trg = trg0[23000:]+trg1[1500:]
-clf = svm.SVC(kernel='linear', C=0.1).fit(first_3out4_src_st, first_3out4_trg)
-print('score')
-print(clf.score(last_4out4_src_st, last_4out4_trg),'-   SVM score')
-
-
 
 
 

@@ -2,7 +2,7 @@
 from path_to_texts import *
 from all_features import *
 
-text_to_write = 'vectors.txt'
+text_to_write = 'vectors2sents.txt'
 documents = 'docs.txt'
 txt_tokens = 'Tokens.txt'
 txt_chains = 'Groups.txt'
