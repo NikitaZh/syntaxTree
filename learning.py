@@ -12,6 +12,7 @@ import random
 
 data = 'vectors.txt'
 
+
 def get_data(txt):
     d = open(txt, 'r', encoding='utf-8')
     arr = []
@@ -20,7 +21,18 @@ def get_data(txt):
         arr.append(line[:-1])
     d.close()
     return arr
+"""
+sl = {}
+for line in get_data(data):
+    if line[17] not in sl:
+        sl[line[17]] = 1
+    else:
+        sl[line[17]] += 1
 
+for q in sl:
+    print(q, ';', sl[q])
+
+"""
 t = 0
 p = 0
 src0 = []
@@ -40,14 +52,16 @@ for q in get_data(data):
 
 print(t, '-количество положительных параметров')
 print(p, '-количество отрицательных параметров')
-random.shuffle(src0)
-random.shuffle(src1)
-src = src0[:3100] + src1[:1600]
-trg = trg0[:3100] + trg1[:1600]
+#random.shuffle(src0)
+#random.shuffle(src1)
+src = src0[:3000] + src1[:1400]
+trg = trg0[:3000] + trg1[:1400]
+#src = src0 + src1
+#trg = trg0 + trg1
 #norm_src = preprocessing.normalize(src)
 standart_src = preprocessing.scale(src)
-expected = trg0[3100:4200] + trg1[1600:]
-pred = src0[3100:4200] + src1[1600:]
+expected = trg0[3000:4000] + trg1[1400:2072]
+pred = src0[3000:4000] + src1[1400:2072]
 pred = preprocessing.scale(pred)
 
 
@@ -105,6 +119,7 @@ print(metrics.confusion_matrix(expected, predicted))
 print('________________________')
 
 
+
 # fit a SVM model to the data
 model5 = SVC()
 model5.fit(standart_src, trg)
@@ -116,7 +131,6 @@ predicted = model5.predict(pred)
 print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
 print('________________________')
-
 
 
 
