@@ -52,8 +52,8 @@ for q in get_data(data):
 
 print(t, '-количество положительных параметров')
 print(p, '-количество отрицательных параметров')
-#random.shuffle(src0)
-#random.shuffle(src1)
+random.shuffle(src0)
+random.shuffle(src1)
 src = src0[:3000] + src1[:1400]
 trg = trg0[:3000] + trg1[:1400]
 #src = src0 + src1
@@ -71,7 +71,7 @@ model.fit(standart_src, trg)
 print('importance of each attribute')
 print(model.feature_importances_)
 print('________________________')
-
+"""
 model1 = LogisticRegression()
 model1.fit(standart_src, trg)
 print(model1)
@@ -117,7 +117,7 @@ predicted = model4.predict(pred)
 print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
 print('________________________')
-
+"""
 
 
 # fit a SVM model to the data

@@ -170,10 +170,38 @@ def syntax_depth_root(sent, ordinal_n, d = []):
         syntax_depth_root(sent, sent[int(ordinal_n)-1][6], arr)
     return d
 
+def syntax_root_connections(sent, ant_id, connections = []):
+    con = connections
+    if sent[int(ant_id)-1][6] != '0':
+        con.append(sent[int(ant_id)-1][7])
+        syntax_root_connections(sent, sent[int(ant_id)-1][6], con)
+    return con
+
+def syntax3(connections):
+    pred = 'предик'
+    compl1 = '1-компл'
+    cluster_2 = ['подч-союзн', 'соч-союзн', 'квазиагент', 'обст', 'сент-соч', 'предл', 'сочин']
+    cluster_3 = ['опред', 'аппоз', 'сравнит', 'агент', 'эксплет', 'аналит', '1-несобст-компл', 'разъяснит', 'вводн', 'об-аппоз', 'неакт-компл', 'ном-аппоз', 'пролепт', '4-компл', '3-компл', 'длительн', 'пасс-анал',  'изъясн', 'оп-опред', 'атриб',  'сравн-союзн', 'уточн', '2-компл', 'соотнос', 'инф-союзн', 'примыкат', 'релят', 'присвяз', 'эллипт', 'электив', 'дат-субъект', 'огранич']
+    erste1 = 0
+    erste2 = 0
+    zweite = 0
+    dritte = 0
+    for q in connections:
+        if q == pred:
+            erste1 = 1
+        elif q == compl1:
+            erste2 = 1
+        elif q in cluster_2:
+            zweite = 1
+        elif q in cluster_3:
+            dritte = 1
+    return erste1, erste2, zweite, dritte
+
+
 
 def syntax_1_exp(sents, a_id):
     """Возращает глубину местоимения, тип связи местоимения, количество запятых, отношение глубины мест к глубине дерева и количество узлов с той же глубиной"""
-    connections = {'вспом': 0, 'сравнит': 0, 'предик': 1, '1-компл': 4, 'атриб': 0, 'ROOT': 0, 'опред': 2, 'обст': 25, 'соч-союзн': 0, 'квазиагент': 5, 'дат-субъект': 0, 'сент-соч': 0, 'агент': 0, 'предл': 3, 'неакт-компл': 0, 'суб-копр': 0, '2-компл': 6}
+    connections = {'вспом': 0, 'сравнит': 0, 'предик': 1, '1-компл': 4, 'атриб': 0, 'ROOT': 0, 'опред': 2, 'обст': 0, 'соч-союзн': 0, 'квазиагент': 5, 'дат-субъект': 0, 'сент-соч': 0, 'агент': 0, 'предл': 3, 'неакт-компл': 0, 'суб-копр': 0, '2-компл': 6}
     sent = sents[-1]
     connection = sent[int(a_id)-1][7]
     connection = connections[connection]
@@ -261,6 +289,7 @@ def syntax_2_exp(sents, np, s_number, a_id):
 
 def get_features(sents, nps, conll_text, chains):
     vectors = []
+    #syntax_connections = []
     snips, anaph_id = sents[:-1], sents[-1][0]
     for s in range(len(nps)):
         for np in nps[s]:
@@ -281,23 +310,31 @@ def get_features(sents, nps, conll_text, chains):
                 vect.append(numb)
                 vect.append(pronoun_info(snips, anaph_id))
                 vect.append(noun_salience(conll_text, snips, np, s))
-                #syntax info
+                #syntax1
                 distance_to_pronoun, con_type, commas, depth_ratio, same_depth_ration = syntax_1_exp(snips, anaph_id)
                 vect.append(distance_to_pronoun)
                 vect.append(con_type)
                 vect.append(commas)
                 vect.append(depth_ratio)
                 vect.append(same_depth_ration)
-                #syntax_info_2nd_exp
+                #syntax2
                 coref_interval, depth_dif, dist_2_ant, ant_con = syntax_2_exp(snips, np, s, anaph_id)
                 vect.append(coref_interval)
                 vect.append(depth_dif)
                 vect.append(dist_2_ant)
                 vect.append(ant_con)
+                #syntax3
+                feature1, feature2, feature3, feature4 = syntax3(syntax_root_connections(snips[s], np[0], connections=[]))
+                vect.append(feature1)
+                vect.append(feature2)
+                vect.append(feature3)
+                vect.append(feature4)
                 #target
                 target, db = target_value(np, chains)
                 #if db is True:
                     #dbl = True
+                #if target == 1:
+                    #syntax_connections += syntax_root_connections(snips[s], np[0], connections=[])
                 vect.append(target)                                    #UNCOMMEND
                 vectors.append(vect)
             #if dbl is True:
