@@ -1,5 +1,4 @@
 # -*- coding: utf8 -*-
-from path_to_texts import get_ids_text
 
 def parse_saText(conll_text):
     """Parsing syntax-annotated text(.conll) for sentences"""
@@ -27,8 +26,6 @@ def get_shifts(text):
     return arr
 
 def get_shift_info(sentences, shifts):
-    sh = 0
-
     for sent in sentences:
         for word in sent:
             i = 0
@@ -69,12 +66,3 @@ def pronoun_snips(parsed_text):
         return snips
     """возвращает массив, в котором каждый элемент содержит контекст местоимений
      и номер(arr[i[-1]]), который показывает к какому местоимению найден контекст в последнем предложении"""
-
-#t = parse_saText('2_astafiev_zhizn_prozhit.conll')
-#q = get_shift_info(t, get_shifts(get_ids_text('Tokens.txt', 5)))
-#p = pronoun_snips(t)
-#print(p[12])
-
-"""for word in t[0]:
-    word = word.split('\t')
-    print(word[0], '-', word[1])"""

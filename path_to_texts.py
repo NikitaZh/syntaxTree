@@ -58,6 +58,3 @@ def get_coref_chains(chains_arr):
             pron_chains.append([[line[7], line[5]], chain])
     return pron_chains
 
-#p = get_ids_text('Groups.txt', 66)
-#ch = get_coref_chains(p)
-#print(ch)
